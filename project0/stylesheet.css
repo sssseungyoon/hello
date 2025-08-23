@@ -1,3 +1,4 @@
+/* these are for the overall structure of the entire page */
 
 /* Parent container */
 .container {
@@ -23,6 +24,11 @@
     font-size: 18px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
+
+
+
+/* these are for the links on top-right */
+
 .top-right {
 position: absolute;   /* stick to the page */
 top: 10px;            /* 10px from the top */
@@ -42,7 +48,34 @@ font-family: Arial, sans-serif;
 color: dodgerblue;    /* hover effect */
 }
 
-.big-input {
-    transform: scale(1.2);
-  transform-origin: center;
-  }
+
+
+/* these are for the headers ("~~ Search") */
+.headers {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+/* these are for the search bar and the textbox */
+
+input[type = "text"]{
+    display: block; /* only one block will exist for each line */
+    margin: 0 auto; /* auto left/right margins = centered */
+    
+    width: 600px; /* Set width */
+    height: 50px; /* Set height */
+    padding: 5px 10px; /* Add padding inside the input */
+    box-sizing: border-box; /* includes the padding and border in the total width/height */
+    font-size: 30px;
+    border-radius: 20px; /* makes corners rounded */
+}
+
+input[type = "submit"]{
+    display: block;
+    margin: 0 auto; 
+    font-size: 30px;
+    margin-top: 10px ;
+    text-align: center;
+}
