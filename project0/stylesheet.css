@@ -1,0 +1,48 @@
+
+/* Parent container */
+.container {
+    display: flex;                  /* enable flexbox */
+    justify-content: center;        /* center horizontally */
+    align-items: center;            /* center vertically */
+    height: 100vh;                  /* full viewport height */
+    background-color: #f0f0f0;       /* light background */
+    gap: 20px;
+}
+
+/* Child box */
+.box {
+    width: 300px;
+    height: 150px;
+    background-color: lightblue;
+    border: 2px solid navy;
+    border-radius: 10px;
+    display: flex;                  /* optional: to center text inside */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+.top-right {
+position: absolute;   /* stick to the page */
+top: 10px;            /* 10px from the top */
+right: 10px;          /* 10px from the right */
+display: flex;        /* put links in a row */
+gap: 15px;            /* spacing between links */
+}
+
+.top-right a {
+text-decoration: none;
+color: navy;
+font-weight: bold;
+font-family: Arial, sans-serif;
+}
+
+.top-right a:hover {
+color: dodgerblue;    /* hover effect */
+}
+
+.big-input {
+    transform: scale(1.2);
+  transform-origin: center;
+  }
